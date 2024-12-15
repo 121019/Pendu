@@ -1,0 +1,101 @@
+body {
+    background-image: url('fondEcranPendu.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    background-position: center;  
+    margin: 0;
+    padding: 0;
+
+  }
+   
+  #keyboard button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  #keyboard button:hover {
+    background-color: #555;
+  }
+  #keyboard button.disabled {
+    background-color: #222;
+    cursor: not-allowed;
+  }
+  
+  #death-message {
+    text-align: center;
+    color: #ff4444;
+    font-size: 2em;
+     margin-top: 20rem;
+    font-family: 'Caveat', cursive; /* Police gothique */
+
+  }
+ 
+   .pendu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }  
+  .pendu-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3rem;
+    font-family: 'Caveat', cursive;  
+    margin-top: -14rem;
+  }
+
+  .word-display {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    margin: 2.5rem 0;
+    color : rgb(243, 242, 242);
+    font-family: 'Caveat', cursive;  
+  }
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+     margin-top: 5rem;
+  }
+
+  .letter-button {
+    background-color: #444;
+    color: white;
+    border: 2px solid #666;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-family: 'Caveat', cursive;  
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+.letter-button:hover {
+    background-color: #666;
+    color: #9cb0f3;
+  }
+
+.letter-button:disabled {
+    background-color: #222;
+    color: #555;
+    cursor: not-allowed;
+}  
+/* Message de victoire ou de défaite */
+.message {
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;  
+
+    color: #ff5555;
+  }
+  
+  /* Ajouter une transition pour les boutons */
+  .letter-button {
+    transition: all 0.2s ease-in-out;
+  }
