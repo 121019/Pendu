@@ -5,7 +5,6 @@ body {
     background-position: center;  
     margin: 0;
     padding: 0;
-
   }
    
   #keyboard button {
@@ -31,7 +30,6 @@ body {
     font-size: 2em;
      margin-top: 20rem;
     font-family: 'Caveat', cursive; /* Police gothique */
-
   }
  
    .pendu-container {
@@ -87,15 +85,30 @@ body {
 }  
 /* Message de victoire ou de défaite */
 .message {
-    margin-top: 8rem;
+    margin-top: 4rem;
     font-size: 2.2rem;
     font-weight: bold;
     font-family: 'Caveat', cursive;  
-
     color: #ff5555;
   }
   
-  /* Ajouter une transition pour les boutons */
-  .letter-button {
-    transition: all 0.2s ease-in-out;
-  }
+  .hangman-image {
+    width: 20rem;  
+    height: 20rem;  
+    background-color: black;  
+
+    }
+
+    .hangman-frame {
+      width: 21rem;  
+      height: 21rem;  
+      background-color: #161515; 
+      border: 3px solid #555; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto;  
+    }
+    
